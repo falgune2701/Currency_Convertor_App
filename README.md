@@ -1,5 +1,5 @@
 # 💱Currency Converter App
-<img src="./src/assets/project-sc.png alt="project-sc">
+<img src="./src/assets/project-sc.png" alt="project-sc">
 
 A responsive currency converter application built with React that allows users to convert between different currencies using real-time exchange rates.
 
@@ -36,9 +36,11 @@ Use the "Swap" button to quickly switch between currencies
 ## Project Structure
 src/
 ├── components/
-│   └── InputBox.jsx      # Reusable input component with currency selection
+│   └── InputBox.jsx      # Reusable input component with currency selection <br>
+
 ├── hooks/
-│   └── useCurrencyInfo.js # Custom hook for fetching currency data
+│   └── useCurrencyInfo.js # Custom hook for fetching currency data <br>
+
 ├── App.jsx               # Main application component
 └── assets/               # Image assets
 
