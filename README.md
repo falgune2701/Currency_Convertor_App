@@ -1,12 +1,52 @@
-# React + Vite
+# 💱Currency Converter App
+<img src="./src/assets/project-sc.png alt="project-sc">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive currency converter application built with React that allows users to convert between different currencies using real-time exchange rates.
 
-Currently, two official plugins are available:
+## Features
+Real-time currency conversion using live exchange rates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Swap currencies with a single click
 
-## Expanding the ESLint configuration
+Clean, modern UI with a currency-themed background
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive design that works on all devices
+
+Easy-to-use interface with intuitive controls
+
+## Technologies Used
+React.js
+
+Tailwind CSS
+
+Fetch API for currency data
+
+Exchange Rate API
+
+## Usage
+Enter the amount you want to convert
+
+Select the "From" currency (default: USD)
+
+Select the "To" currency (default: INR)
+
+Click "Convert" to see the result
+
+Use the "Swap" button to quickly switch between currencies
+## Project Structure
+src/
+├── components/
+│   └── InputBox.jsx      # Reusable input component with currency selection
+├── hooks/
+│   └── useCurrencyInfo.js # Custom hook for fetching currency data
+├── App.jsx               # Main application component
+└── assets/               # Image assets
+
+## Installation
+ step-1 git clone https://github.com/your-username/currency-converter.git
+ step-2 cd currency-converter
+ step-3 npm install
+ step-4 npm run dev
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
