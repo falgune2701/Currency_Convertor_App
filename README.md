@@ -35,14 +35,14 @@ Click "Convert" to see the result
 Use the "Swap" button to quickly switch between currencies
 ## Project Structure
 src/
-├── components/
+├── components/<br>
 │   └── InputBox.jsx      # Reusable input component with currency selection <br>
 
-├── hooks/
+├── hooks/ <br>
 │   └── useCurrencyInfo.js # Custom hook for fetching currency data <br>
 
-├── App.jsx               # Main application component
-└── assets/               # Image assets
+├── App.jsx  # Main application component <br>
+  └── assets/               # Image assets
 
 ## Installation
  step-1 git clone https://github.com/your-username/currency-converter.git
