@@ -15,37 +15,31 @@ function useCurrencyInfo(currency) {
   cny: { usd: 0.14, inr: 12.2, eur: 0.127, gbp: 0.11, jpy: 22.7, cad: 0.19, aud: 0.21, chf: 0.12 }
 };
 
+// Get all available currencies
+  const allCurrencies = ['usd', 'inr', 'eur', 'gbp', 'jpy', 'cad', 'aud', 'chf', 'cny'];
+  
+  // Get the rates for the selected currency and add the base currency with value 1
+  const getCurrencyData = (baseCurrency) => {
+    const currencyRates = rates[baseCurrency] || {};
+    
+    // Create object with all currencies, base currency = 1, others from rates
+    const allRates = {};
+    allCurrencies.forEach(curr => {
+      if (curr === baseCurrency) {
+        allRates[curr] = 1;
+      } else {
+        allRates[curr] = currencyRates[curr] || 0;
+      }
+    });
+    
+    return allRates;
+  };
 
   return {
-    data: rates[currency] || {},
+    data: getCurrencyData(currency),
     loading: false,
     error: null
   };
-
-//     const [data, setData] = useState({});
-//     const [loading, setLoading] = useState(true);
-//     const [error, setError] = useState(null);
-//     useEffect(() => {
-
-//         setLoading(true);
-//         setError(null);
-
-//         fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
-//         .then((res) => {
-//             if(!res.ok) throw new Error("Failed to fetch currency data");
-//             return res.json()
-//         })
-//         .then((res) =>{ 
-//             setData(res[currency] || {});
-//             setLoading(false);
-//         })
-//         .catch((err) => {
-//             setError(err.message);
-//             setLoading(false);
-//         })
-// },[currency])
-
-//    return {data, loading, error};
 }
 
 export default useCurrencyInfo;
