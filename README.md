@@ -1,54 +1,35 @@
-# 💱Currency Converter App
-<img src="./src/assets/project-sc.png" alt="project-sc">
+# 💱 Currency Converter App
 
-A responsive currency converter application built with React that allows users to convert between different currencies using real-time exchange rates.
+![Project Banner](https://github.com/Kalyan-github-4/Currency_Convertor_App/blob/main/public/SC.png?raw=true)
 
-## Features
-Real-time currency conversion using live exchange rates
+A responsive currency converter application built with React that provides real-time exchange rates with an intuitive user interface.
 
-Swap currencies with a single click
+## ✨ Features
 
-Clean, modern UI with a currency-themed background
+- Real-time currency conversion using live exchange rates
+- Swap currencies with a single click
+- Clean, modern UI with currency-themed design
+- Fully responsive layout (desktop, tablet, mobile)
+- Intuitive controls and easy navigation
+- Error handling for API failures
+- Local storage for frequently used currencies
 
-Responsive design that works on all devices
+## 🛠 Technologies Used
 
-Easy-to-use interface with intuitive controls
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **API**: Exchange Rate API (free tier)
+- **State Management**: React Hooks
+- **Build Tool**: Vite
 
-## Technologies Used
-React.js
+## 📦 Installation
 
-Tailwind CSS
-
-Fetch API for currency data
-
-Exchange Rate API
-
-## Usage
-Enter the amount you want to convert
-
-Select the "From" currency (default: USD)
-
-Select the "To" currency (default: INR)
-
-Click "Convert" to see the result
-
-Use the "Swap" button to quickly switch between currencies
-## Project Structure
-src/
-├── components/<br>
-│   └── InputBox.jsx      # Reusable input component with currency selection <br>
-
-├── hooks/ <br>
-│   └── useCurrencyInfo.js # Custom hook for fetching currency data <br>
-
-├── App.jsx  # Main application component <br>
-  └── assets/               # Image assets
-
-## Installation
- step-1 git clone https://github.com/your-username/currency-converter.git
- step-2 cd currency-converter
- step-3 npm install
- step-4 npm run dev
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kalyan-github-4/Currency_Convertor_App.git
+   cd Currency_Convertor_App
+   npm install
+   npm run dev
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
