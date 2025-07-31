@@ -1,6 +1,6 @@
 # 💱 Currency Converter App
 
-![Project Banner](https://github.com/Kalyan-github-4/Currency_Convertor_App/blob/main/public/SC.png?raw=true)
+![Project Banner](https://github.com/falgune2701/Currency_Convertor_App/blob/main/WhatsApp%20Image%202025-07-31%20at%2022.04.39_8fb35207.jpg?raw=true)
 
 A responsive currency converter application built with React that provides real-time exchange rates with an intuitive user interface.
 
